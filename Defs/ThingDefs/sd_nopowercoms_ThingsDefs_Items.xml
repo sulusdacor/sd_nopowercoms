@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== no power coms - glow crystal ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_nopowercoms_GlowCrystal</defName>
+    <label>glow crystal</label>
+    <description>A mysterious crystal that glows. Can be used to build glowing trade markers, that produce light, but no heat (needs research pidgeon post).</description>
+    <graphicData>
+      <texPath>sd_nopowercoms/ressources/sd_nopowercoms_glowcrystal_res</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>15</MarketValue>
+	  <Mass>1</Mass>
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.15</BluntDamageMultiplier>
+    </statBases>
+	<comps>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(173,214,239,0)</glowColor>
+      </li>
+    </comps>
+    <stackLimit>500</stackLimit>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+	<tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <!--=============== unfinished glow crystal to make crafting not such a pain ====================-->
+  
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>sd_nopowercoms_unfinished_GlowCrystal</defName>
+    <label>unfinished glow crystal</label>
+	<description>The making of a mysterious crystal that could glow, it requieres more work to refine it. Later crystals can be used to build glowing trade markers, that produce light, but no heat (needs research pidgeon post).</description>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+
+</Defs>

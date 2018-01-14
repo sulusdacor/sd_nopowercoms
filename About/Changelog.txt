@@ -1,0 +1,30 @@
+personal changelog for mod "[sd] no power coms"
+
+- 23/12/2016
+
+	- updated to a16
+	- added mass 1 to glow crystal
+	- split xmls for overview, bases + rest
+	- added mass, trademarker 50, birdcage 15, table 25
+	- set ai chilldestination to false for all objects, same as vanilla trademarker/commsconsole
+	- removed some case sensitive defnames, all lower case now
+	- fixed typo in about file
+
+- 06/01/2017
+
+	- fixed the worktobuild xml tag
+
+- 31/05/2017
+
+	- update to a17, just version number
+	- added recipe to craft crystal at stonecutters table (25 metal, 50 silver, 10 gold, 9k workamount/same as components, lv10 crafting)
+	- updated about file
+	- updated buildingbase def, sellprice factor
+
+- 28/12/2017
+
+	- update to b18
+	- recipedefs, buildings to <Defs>
+	- adjusted resoucebase beauty to vanilla value
+	- removed ignore needs power form postbird cage
+	- skillrequirements xml update

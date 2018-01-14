@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== recipe crystal ====================-->
+
+	<RecipeDef>
+    <defName>sd_nopowercoms_recipe_make_crystal</defName>
+    <label>make crystal</label>
+    <description>Make a crystal with the power of alchemy (a long and expensive process).</description>
+    <jobString>Making crystal.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>9000</workAmount>
+    <unfinishedThingDef>sd_nopowercoms_unfinished_GlowCrystal</unfinishedThingDef>
+    <ingredients>
+        <li>
+        <filter>
+          <thingDefs>
+			<li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		<li>Steel</li>
+		<li>Gold</li>
+		<li>Silver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <sd_nopowercoms_GlowCrystal>1</sd_nopowercoms_GlowCrystal>
+    </products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<researchPrerequisite>
+		<li>sd_nopowercoms_pidgeonpost</li>
+	</researchPrerequisite>
+	<recipeUsers>
+			<li>TableStonecutter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+</Defs>

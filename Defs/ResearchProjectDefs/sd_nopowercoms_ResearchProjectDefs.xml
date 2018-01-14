@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============================== Tier 1: pre-electricity ===================================-->
+
+  <ResearchProjectDef>
+    <defName>sd_nopowercoms_pidgeonpost</defName>
+    <label>pidgeon post</label>
+    <description>On the lesser developed Rimworld the method to transport information with animals is a common practice. This enables you to call traders and make contact with the nearest shipping routes.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+	<researchViewX>16</researchViewX>
+  </ResearchProjectDef>
+
+</Defs>

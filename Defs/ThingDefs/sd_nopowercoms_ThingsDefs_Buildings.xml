@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========================== no power coms - trade marker ============================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_nopowercoms_trademarker_normal</defName>
+    <label>trade marker</label>
+    <thingClass>Building_OrbitalTradeBeacon</thingClass>
+    <graphicData>
+      <texPath>sd_nopowercoms/trade_markers/sd_nopowercoms_trademarker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>1300</WorkToBuild>
+	  <Mass>50</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Required for trading. You can only sell goods that are near an trade goods marker. Can be placed indoors. Trade markers function as a torch, produce light and heat, require fuel (wood).</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>0.15</fillPercent>
+	<costList>
+      <Steel>20</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.2</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+	  <li Class="CompProperties_FireOverlay">
+        <fireSize>0.5</fireSize>
+        <offset>(0,0,0.2)</offset>
+      </li>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>8</pathCost>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>true</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_ShowTradeBeaconRadius</li>
+    </placeWorkers>
+	<researchPrerequisites>
+      <li>sd_nopowercoms_pidgeonpost</li>
+    </researchPrerequisites>
+	<castEdgeShadows>true</castEdgeShadows>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_trademarker_menuicon</uiIconPath>
+	<building>
+			<ai_chillDestination>false</ai_chillDestination>
+	</building>
+  </ThingDef>
+  
+  <!--========================== no power coms - glowstone trade marker ============================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_nopowercoms_trademarker_glow</defName>
+    <label>trade marker (glow)</label>
+    <thingClass>Building_OrbitalTradeBeacon</thingClass>
+    <graphicData>
+      <texPath>sd_nopowercoms/trade_markers/sd_nopowercoms_glowcrystal_trademarker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>1300</WorkToBuild>
+	  <Mass>50</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Required for trading. You can only sell goods that are near an trade goods marker. Can be placed indoors. Trade markers function as a torch. This one requires a rare glowing crystal to build, but no fuel and produces no heat. Glowing crystals can be bought from exotic goods traders or traders who deal with these type of goods.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>0.15</fillPercent>
+	<costList>
+      <Steel>20</Steel>
+      <sd_nopowercoms_GlowCrystal>1</sd_nopowercoms_GlowCrystal>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <comps>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(173,214,239,0)</glowColor>
+      </li>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>8</pathCost>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>true</rotatable>
+    <placeWorkers>
+      <li>PlaceWorker_ShowTradeBeaconRadius</li>
+    </placeWorkers>
+	<researchPrerequisites>
+      <li>sd_nopowercoms_pidgeonpost</li>
+    </researchPrerequisites>
+	<castEdgeShadows>true</castEdgeShadows>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_glowcrystal_trademarker_menuicon</uiIconPath>
+	<building>
+			<ai_chillDestination>false</ai_chillDestination>
+	</building>
+  </ThingDef>
+  
+    <!--========================== no power comms - bird cage ============================-->
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_nopowercoms_postbirdcage</defName>
+    <label>post bird cage</label>
+	<thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>sd_nopowercoms/bird_cage/sd_nopowercoms_birdcage</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+	  <Mass>15</Mass>
+      <Flammability>1.0</Flammability>
+	  <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>This will attract a bird capable of carrying messages over long distances. You will have to feed him with raw food or hay (no fertilized eggs) every now and then.
+	This needs to be placed near a message table to quickly attach the newly writen document to the bird.</description>
+    <size>(1,1)</size>
+    <building>
+		<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<costList>
+      <Steel>20</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.2</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+			<exceptedCategories>
+				<li>EggsFertilized</li>
+			</exceptedCategories>
+        </fuelFilter>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <researchPrerequisites>
+      <li>sd_nopowercoms_pidgeonpost</li>
+    </researchPrerequisites>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_birdcage_menuicon</uiIconPath>
+  </ThingDef>
+  
+    <!--========================== no power comms - message table ============================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>sd_nopowercoms_commsconsole</defName>
+    <label>message table</label>
+    <thingClass>Building_CommsConsole</thingClass>
+    <graphicData>
+      <texPath>sd_nopowercoms/message_table/sd_nopowercoms_messagetable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,4)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>150</pathCost>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2200</WorkToBuild>
+	  <Mass>25</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Allows contact with remote traders coming from the ocean or inland waterways as well as other factions for trade and diplomacy. Its needs a post bird cage nearby.</description>
+    <size>(3,2)</size>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <comps>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+		<basePowerConsumption>1</basePowerConsumption>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+	<researchPrerequisites>
+      <li>sd_nopowercoms_pidgeonpost</li>
+    </researchPrerequisites>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<building>
+			<ai_chillDestination>false</ai_chillDestination>
+	</building>
+  </ThingDef>
+  
+</Defs>
