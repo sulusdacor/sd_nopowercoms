@@ -28,3 +28,7 @@ personal changelog for mod "[sd] no power coms"
 	- adjusted resoucebase beauty to vanilla value
 	- removed ignore needs power form postbird cage
 	- skillrequirements xml update
+
+- 15/01/2018
+
+	- added modsync
