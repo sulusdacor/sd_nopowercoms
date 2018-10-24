@@ -28,3 +28,13 @@ personal changelog for mod "[sd] no power coms"
 	- adjusted resoucebase beauty to vanilla value
 	- removed ignore needs power form postbird cage
 	- skillrequirements xml update
+
+- 15/01/2018
+
+	- added modsync
+
+- 24/10/2018
+
+	- rimworld 1.0 update
+	- xml fixes
+	- added kibble to the postbirdcage fuel, but had to remove the fertilized eggs exception, since this feature seems to be removed
