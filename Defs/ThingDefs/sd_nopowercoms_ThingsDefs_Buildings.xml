@@ -40,6 +40,7 @@
             <li>WoodLog</li>
           </thingDefs>
         </fuelFilter>
+		<initialFuelPercent>1</initialFuelPercent>
       </li>
 	  <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
@@ -65,11 +66,15 @@
       <li>sd_nopowercoms_pidgeonpost</li>
     </researchPrerequisites>
 	<castEdgeShadows>true</castEdgeShadows>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_trademarker_menuicon</uiIconPath>
 	<building>
 			<ai_chillDestination>false</ai_chillDestination>
 	</building>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+	<tickerType>Normal</tickerType>
   </ThingDef>
   
   <!--========================== no power coms - glowstone trade marker ============================-->
@@ -121,11 +126,14 @@
       <li>sd_nopowercoms_pidgeonpost</li>
     </researchPrerequisites>
 	<castEdgeShadows>true</castEdgeShadows>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_glowcrystal_trademarker_menuicon</uiIconPath>
 	<building>
 			<ai_chillDestination>false</ai_chillDestination>
 	</building>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
   </ThingDef>
   
     <!--========================== no power comms - bird cage ============================-->
@@ -185,11 +193,10 @@
 			</categories>
 			<thingDefs>
 				<li>Hay</li>
+				<li>Kibble</li>
 			</thingDefs>
-			<exceptedCategories>
-				<li>EggsFertilized</li>
-			</exceptedCategories>
         </fuelFilter>
+		<initialFuelPercent>1</initialFuelPercent>
       </li>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -197,8 +204,11 @@
     <researchPrerequisites>
       <li>sd_nopowercoms_pidgeonpost</li>
     </researchPrerequisites>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<uiIconPath>sd_nopowercoms/menu_icons/sd_nopowercoms_birdcage_menuicon</uiIconPath>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
   </ThingDef>
   
     <!--========================== no power comms - message table ============================-->
@@ -251,10 +261,13 @@
 	<researchPrerequisites>
       <li>sd_nopowercoms_pidgeonpost</li>
     </researchPrerequisites>
-	<minifiedDef>MinifiedFurniture</minifiedDef>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<building>
 			<ai_chillDestination>false</ai_chillDestination>
 	</building>
+	<thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
   </ThingDef>
   
 </Defs>
