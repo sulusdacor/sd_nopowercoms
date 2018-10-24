@@ -31,6 +31,7 @@ personal changelog for mod "[sd] no power coms"
 
 - 15/01/2018
 
+<<<<<<< HEAD
 	- added modsync
 
 - 24/10/2018
@@ -38,3 +39,6 @@ personal changelog for mod "[sd] no power coms"
 	- rimworld 1.0 update
 	- xml fixes
 	- added kibble to the postbirdcage fuel, but had to remove the fertilized eggs exception, since this feature seems to be removed
+=======
+	- added modsync
+>>>>>>> 41be8de2e3b613c2b07ed1b2646ed0fd0e94c021
