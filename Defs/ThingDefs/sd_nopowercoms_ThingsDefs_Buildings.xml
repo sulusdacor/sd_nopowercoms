@@ -163,7 +163,7 @@
 	  <Cleanliness>-5</Cleanliness>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>This will attract a bird capable of carrying messages over long distances. You will have to feed him with raw food or hay (no fertilized eggs) every now and then.
+    <description>This will attract a bird capable of carrying messages over long distances. You will have to feed him with raw food or hay every now and then.
 	This needs to be placed near a message table to quickly attach the newly writen document to the bird.</description>
     <size>(1,1)</size>
     <building>

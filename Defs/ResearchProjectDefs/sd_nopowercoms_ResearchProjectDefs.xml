@@ -5,7 +5,7 @@
 
   <ResearchProjectDef>
     <defName>sd_nopowercoms_pidgeonpost</defName>
-    <label>pidgeon post</label>
+    <label>Brieftauben</label>
     <description>On the lesser developed Rimworld the method to transport information with animals is a common practice. This enables you to call traders and make contact with the nearest shipping routes.</description>
     <baseCost>500</baseCost>
     <techLevel>Medieval</techLevel>
